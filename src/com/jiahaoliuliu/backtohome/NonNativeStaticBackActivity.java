@@ -17,7 +17,7 @@ public class NonNativeStaticBackActivity extends SherlockActivity {
 		// for ActionBarSherlock
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {

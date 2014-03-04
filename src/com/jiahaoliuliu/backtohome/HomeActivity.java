@@ -4,6 +4,7 @@ import com.actionbarsherlock.app.SherlockActivity;
 
 import android.os.Bundle;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.view.View;
 import android.widget.Button;
 
@@ -20,6 +21,10 @@ public class HomeActivity extends SherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		// Lock the screen orientation
+		this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
 		setContentView(R.layout.activity_home);
 
 		// Link the content

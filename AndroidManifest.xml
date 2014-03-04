@@ -27,10 +27,6 @@
             android:name="com.jiahaoliuliu.backtohome.NativeStaticBackActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.jiahaoliuliu.backtohome.HomeActivity" >
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.jiahaoliuliu.backtohome.HomeActivity" />
         </activity>
 
         <activity

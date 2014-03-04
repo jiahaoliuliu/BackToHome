@@ -1,18 +1,19 @@
 package com.jiahaoliuliu.backtohome;
 
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
-
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
-public class NativeDynamicBackActivity extends SherlockActivity {
+public class NativeDynamicBackActivity extends Activity {
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.native_dynamic_back_layout);
 
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override

@@ -11,7 +11,7 @@ public class NativeBackStaticalActivity extends SherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.back_statical_layout);
+		setContentView(R.layout.native_back_statical_layout);
 
 		// This is not needed for the native ActionBar, but
 		// for ActionBarSherlock

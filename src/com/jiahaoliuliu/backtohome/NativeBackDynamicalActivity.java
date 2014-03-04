@@ -10,7 +10,7 @@ public class NativeBackDynamicalActivity extends SherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.back_dynamical_layout);
+		setContentView(R.layout.native_back_dynamical_layout);
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}

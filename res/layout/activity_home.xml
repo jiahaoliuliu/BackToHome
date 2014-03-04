@@ -9,7 +9,7 @@
     tools:context=".HomeActivity" >
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -17,22 +17,57 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Home" />
 
-    <Button
-        android:id="@+id/backStaticalButton"
+    <TextView
+        android:id="@+id/subTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="26dp"
+        android:text="Native Action bar(4.0+)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/nativeBackStaticalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subTitle1"
+        android:layout_centerHorizontal="true"
         android:text="Back Statical" />
 
     <Button
-        android:id="@+id/backDynamicalButton"
+        android:id="@+id/nativeBackDynamicalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nativeBackStaticalButton"
+        android:layout_centerHorizontal="true"
+        android:text="Back Dynamical" />
+
+   <TextView
+        android:id="@+id/subTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:layout_below="@+id/backStaticalButton"
+        android:layout_below="@+id/nativeBackDynamicalButton"
+        android:layout_marginTop="26dp"
+        android:text="Action bar Sherlock(4.0 or lower)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/nonNativeBackStaticalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subTitle2"
+        android:layout_centerHorizontal="true"
+        android:text="Back Statical" />
+
+    <Button
+        android:id="@+id/nonNativeBackDynamicalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nonNativeBackStaticalButton"
+        android:layout_centerHorizontal="true"
         android:text="Back Dynamical" />
 
+    
 </RelativeLayout>

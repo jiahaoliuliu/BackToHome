@@ -18,23 +18,22 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.jiahaoliuliu.backtohome.BackStaticalActivity"
+            android:name="com.jiahaoliuliu.backtohome.NativeBackStaticalActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.jiahaoliuliu.backtohome.HomeActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.jiahaoliuliu.backtohome.Home" />
+                android:value="com.jiahaoliuliu.backtohome.HomeActivity" />
         </activity>
 
         <activity
-            android:name="com.jiahaoliuliu.backtohome.BackDynamicalActivity"
+            android:name="com.jiahaoliuliu.backtohome.NativeBackDynamicalActivity"
             android:label="@string/app_name" >
         </activity>
 

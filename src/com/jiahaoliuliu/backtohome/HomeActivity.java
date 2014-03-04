@@ -43,9 +43,9 @@ public class HomeActivity extends SherlockActivity {
 			switch (v.getId()) {
 			case R.id.nativeBackStaticalButton:
 				// Start the activity
-				Intent startBackStaticalActivityIntent
+				Intent startNativeBackStaticalActivityIntent
 					= new Intent(HomeActivity.this, NativeBackStaticalActivity.class);
-				startActivity(startBackStaticalActivityIntent);
+				startActivity(startNativeBackStaticalActivityIntent);
 
 				break;
 			case R.id.nativeBackDynamicalButton:
@@ -53,6 +53,20 @@ public class HomeActivity extends SherlockActivity {
 				Intent startBackDynamicalActivityIntent
 					= new Intent(HomeActivity.this, NativeBackDynamicalActivity.class);
 				startActivity(startBackDynamicalActivityIntent);
+
+				break;
+			case R.id.nonNativeBackStaticalButton:
+				// Start the activity
+				Intent startNonNativeBackStaticalActivityIntent
+					= new Intent(HomeActivity.this, NonNativeBackStaticalActivity.class);
+				startActivity(startNonNativeBackStaticalActivityIntent);
+
+				break;
+			case R.id.nonNativeBackDynamicalButton:
+				// Start the activity
+				Intent startNonNativeBackDynamicalActivityIntent
+					= new Intent(HomeActivity.this, NonNativeBackDynamicalActivity.class);
+				startActivity(startNonNativeBackDynamicalActivityIntent);
 
 				break;
 			}

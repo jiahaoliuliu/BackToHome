@@ -5,12 +5,12 @@ import com.actionbarsherlock.view.MenuItem;
 
 import android.os.Bundle;
 
-public class NativeBackDynamicalActivity extends SherlockActivity {
+public class NonNativeDynamicBackActivity extends SherlockActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.native_back_dynamical_layout);
+		setContentView(R.layout.non_native_dynamic_back_layout);
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}

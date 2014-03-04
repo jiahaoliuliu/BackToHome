@@ -10,12 +10,12 @@ import android.widget.Button;
 public class HomeActivity extends SherlockActivity {
 
 	// Native Action bar
-	private Button nativeBackStaticalButton;
-	private Button nativeBackDynamicalButton;
+	private Button nativeStaticBackButton;
+	private Button nativeDynamicBackButton;
 
 	// Non native action bar (ActionBarSherlock)
-	private Button nonNativeBackStaticalButton;
-	private Button nonNativeBackDynamicalButton;
+	private Button nonNativeStaticBackButton;
+	private Button nonNativeDynamicBackButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +23,17 @@ public class HomeActivity extends SherlockActivity {
 		setContentView(R.layout.activity_home);
 
 		// Link the content
-		nativeBackStaticalButton = (Button)findViewById(R.id.nativeBackStaticalButton);
-		nativeBackStaticalButton.setOnClickListener(onClickListener);
+		nativeStaticBackButton = (Button)findViewById(R.id.nativeStaticBackButton);
+		nativeStaticBackButton.setOnClickListener(onClickListener);
 
-		nativeBackDynamicalButton = (Button)findViewById(R.id.nativeBackDynamicalButton);
-		nativeBackDynamicalButton.setOnClickListener(onClickListener);
+		nativeDynamicBackButton = (Button)findViewById(R.id.nativeDynamicBackButton);
+		nativeDynamicBackButton.setOnClickListener(onClickListener);
 
-		nonNativeBackStaticalButton = (Button)findViewById(R.id.nonNativeBackStaticalButton);
-		nonNativeBackStaticalButton.setOnClickListener(onClickListener);
+		nonNativeStaticBackButton = (Button)findViewById(R.id.nonNativeStaticBackButton);
+		nonNativeStaticBackButton.setOnClickListener(onClickListener);
 
-		nonNativeBackDynamicalButton = (Button)findViewById(R.id.nonNativeBackDynamicalButton);
-		nonNativeBackDynamicalButton.setOnClickListener(onClickListener);
+		nonNativeDynamicBackButton = (Button)findViewById(R.id.nonNativeDynamicBackButton);
+		nonNativeDynamicBackButton.setOnClickListener(onClickListener);
 	}
 
 	private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -41,32 +41,32 @@ public class HomeActivity extends SherlockActivity {
 		@Override
 		public void onClick(View v) {
 			switch (v.getId()) {
-			case R.id.nativeBackStaticalButton:
+			case R.id.nativeStaticBackButton:
 				// Start the activity
-				Intent startNativeBackStaticalActivityIntent
-					= new Intent(HomeActivity.this, NativeBackStaticalActivity.class);
-				startActivity(startNativeBackStaticalActivityIntent);
+				Intent startNativeStaticBackActivityIntent
+					= new Intent(HomeActivity.this, NativeStaticBackActivity.class);
+				startActivity(startNativeStaticBackActivityIntent);
 
 				break;
-			case R.id.nativeBackDynamicalButton:
+			case R.id.nativeDynamicBackButton:
 				// Start the activity
-				Intent startBackDynamicalActivityIntent
-					= new Intent(HomeActivity.this, NativeBackDynamicalActivity.class);
-				startActivity(startBackDynamicalActivityIntent);
+				Intent startDynamicBackActivityIntent
+					= new Intent(HomeActivity.this, NativeDynamicBackActivity.class);
+				startActivity(startDynamicBackActivityIntent);
 
 				break;
-			case R.id.nonNativeBackStaticalButton:
+			case R.id.nonNativeStaticBackButton:
 				// Start the activity
-				Intent startNonNativeBackStaticalActivityIntent
-					= new Intent(HomeActivity.this, NonNativeBackStaticalActivity.class);
-				startActivity(startNonNativeBackStaticalActivityIntent);
+				Intent startNonNativeStaticBackActivityIntent
+					= new Intent(HomeActivity.this, NonNativeStaticBackActivity.class);
+				startActivity(startNonNativeStaticBackActivityIntent);
 
 				break;
-			case R.id.nonNativeBackDynamicalButton:
+			case R.id.nonNativeDynamicBackButton:
 				// Start the activity
-				Intent startNonNativeBackDynamicalActivityIntent
-					= new Intent(HomeActivity.this, NonNativeBackDynamicalActivity.class);
-				startActivity(startNonNativeBackDynamicalActivityIntent);
+				Intent startNonNativeDynamicBackActivityIntent
+					= new Intent(HomeActivity.this, NonNativeDynamicBackActivity.class);
+				startActivity(startNonNativeDynamicBackActivityIntent);
 
 				break;
 			}

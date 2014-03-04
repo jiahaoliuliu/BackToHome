@@ -28,7 +28,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/nativeBackStaticalButton"
+        android:id="@+id/nativeStaticBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/subTitle1"
@@ -36,10 +36,10 @@
         android:text="Static Back" />
 
     <Button
-        android:id="@+id/nativeBackDynamicalButton"
+        android:id="@+id/nativeDynamicBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/nativeBackStaticalButton"
+        android:layout_below="@+id/nativeStaticBackButton"
         android:layout_centerHorizontal="true"
         android:text="Dynamic Back" />
 
@@ -48,13 +48,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/nativeBackDynamicalButton"
+        android:layout_below="@+id/nativeDynamicBackButton"
         android:layout_marginTop="26dp"
         android:text="Action bar Sherlock(4.0 or lower)"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/nonNativeBackStaticalButton"
+        android:id="@+id/nonNativeStaticBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/subTitle2"
@@ -62,10 +62,10 @@
         android:text="Static Back" />
 
     <Button
-        android:id="@+id/nonNativeBackDynamicalButton"
+        android:id="@+id/nonNativeDynamicBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/nonNativeBackStaticalButton"
+        android:layout_below="@+id/nonNativeStaticBackButton"
         android:layout_centerHorizontal="true"
         android:text="Dynamic Back" />
 

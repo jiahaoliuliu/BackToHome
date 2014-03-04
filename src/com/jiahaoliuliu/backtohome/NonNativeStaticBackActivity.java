@@ -6,12 +6,12 @@ import com.actionbarsherlock.view.MenuItem;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 
-public class NativeBackStaticalActivity extends SherlockActivity {
+public class NonNativeStaticBackActivity extends SherlockActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.native_back_statical_layout);
+		setContentView(R.layout.non_native_static_back_layout);
 
 		// This is not needed for the native ActionBar, but
 		// for ActionBarSherlock

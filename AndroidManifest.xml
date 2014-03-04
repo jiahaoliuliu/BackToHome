@@ -24,7 +24,7 @@
 
         <!-- Native -->
         <activity
-            android:name="com.jiahaoliuliu.backtohome.NativeBackStaticalActivity"
+            android:name="com.jiahaoliuliu.backtohome.NativeStaticBackActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.jiahaoliuliu.backtohome.HomeActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -34,13 +34,13 @@
         </activity>
 
         <activity
-            android:name="com.jiahaoliuliu.backtohome.NativeBackDynamicalActivity"
+            android:name="com.jiahaoliuliu.backtohome.NativeDynamicBackActivity"
             android:label="@string/app_name" >
         </activity>
 
         <!-- Non Native -->
         <activity
-            android:name="com.jiahaoliuliu.backtohome.NonNativeBackStaticalActivity"
+            android:name="com.jiahaoliuliu.backtohome.NonNativeStaticBackActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.jiahaoliuliu.backtohome.HomeActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -50,7 +50,7 @@
         </activity>
 
         <activity
-            android:name="com.jiahaoliuliu.backtohome.NonNativeBackDynamicalActivity"
+            android:name="com.jiahaoliuliu.backtohome.NonNativeDynamicBackActivity"
             android:label="@string/app_name" >
         </activity>
 

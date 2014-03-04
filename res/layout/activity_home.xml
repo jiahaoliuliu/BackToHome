@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/subTitle1"
         android:layout_centerHorizontal="true"
-        android:text="Back Statical" />
+        android:text="Static Back" />
 
     <Button
         android:id="@+id/nativeBackDynamicalButton"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/nativeBackStaticalButton"
         android:layout_centerHorizontal="true"
-        android:text="Back Dynamical" />
+        android:text="Dynamic Back" />
 
    <TextView
         android:id="@+id/subTitle2"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/subTitle2"
         android:layout_centerHorizontal="true"
-        android:text="Back Statical" />
+        android:text="Static Back" />
 
     <Button
         android:id="@+id/nonNativeBackDynamicalButton"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/nonNativeBackStaticalButton"
         android:layout_centerHorizontal="true"
-        android:text="Back Dynamical" />
+        android:text="Dynamic Back" />
 
     
 </RelativeLayout>

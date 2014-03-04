@@ -26,7 +26,7 @@ public class HomeActivity extends Activity {
 	}
 	
 	private View.OnClickListener onClickListener = new View.OnClickListener() {
-		
+
 		@Override
 		public void onClick(View v) {
 			switch (v.getId()) {
@@ -35,9 +35,14 @@ public class HomeActivity extends Activity {
 				Intent startBackStaticalActivityIntent
 					= new Intent(HomeActivity.this, BackStaticalActivity.class);
 				startActivity(startBackStaticalActivityIntent);
-				
+
 				break;
 			case R.id.backDynamicalButton:
+				// Start the activity
+				Intent startBackDynamicalActivityIntent
+					= new Intent(HomeActivity.this, BackDynamicalActivity.class);
+				startActivity(startBackDynamicalActivityIntent);
+
 				break;
 			}
 		}

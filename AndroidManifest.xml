@@ -37,8 +37,9 @@
         <!-- Non Native -->
         <activity
             android:name="com.jiahaoliuliu.backtohome.NonNativeStaticBackActivity"
-            android:label="@string/app_name" >
-            <!-- Parent activity meta-data to support 4.0 and lower -->
+            android:label="@string/app_name"
+            android:parentActivityName="com.jiahaoliuliu.backtohome.HomeActivity" >
+            <!-- Parent activity meta-data to support 3.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jiahaoliuliu.backtohome.HomeActivity" />

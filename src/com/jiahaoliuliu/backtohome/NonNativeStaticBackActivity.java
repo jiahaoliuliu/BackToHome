@@ -23,9 +23,7 @@ public class NonNativeStaticBackActivity extends SherlockActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    switch (item.getItemId()) {
-	    // Respond to the action bar's Up/Home button
-	    case android.R.id.home:
+		if (item.getItemId() == android.R.id.home) {
 	        NavUtils.navigateUpFromSameTask(this);
 	        return true;
 	    }
